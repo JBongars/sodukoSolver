@@ -1,3 +1,7 @@
+import {
+  range
+} from '../utilities';
+
 const isPositionEmpty = (board, x, y, _n) => board[y][x] === 0;
 const isPositionSquareValid = (board, x, y, n) => {
   const getAxisRange = (i) => {
