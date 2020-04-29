@@ -1,0 +1,16 @@
+{
+  "name": "sodukosolver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "rollup": "^2.7.3",
+    "rollup-plugin-minify": "^1.0.3"
+  }
+}

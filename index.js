@@ -1,3 +1,3 @@
-const runnable = require('./runnables/webdoku');
+import run from './runnables/webdoku';
 
-runnable();
+run();

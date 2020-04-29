@@ -1,16 +1,12 @@
-const soduko = require('../solver/classic');
-const scrapper = require('./scrapper/websudoku');
+import {
+  solve
+} from '../solver/classic';
+import {
+  getBoard,
+  setBoard
+} from '../scrapper/webdoku';
 
-module.exports = function () {
-  const {
-    getBoard,
-    setBoard
-  } = scrapper();
-
-  const {
-    solve
-  } = soduko();
-
+const run = () => {
   const board = getBoard();
   const result = solve(board);
 
@@ -21,3 +17,8 @@ module.exports = function () {
 
   setBoard(result[0]);
 }
+
+export default run;
+export {
+  run
+};

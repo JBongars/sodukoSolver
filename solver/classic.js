@@ -57,6 +57,7 @@ const solve = (initialBoard) => {
   return results;
 }
 
-module.exports = {
+export default solve;
+export {
   solve
 };
